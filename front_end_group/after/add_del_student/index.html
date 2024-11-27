@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Add Student </h1>
+        <form id="studentForm">
+            <input type="text" id="studentName" placeholder="Enter name of student" required>
+            <input type="text" id="studentId" placeholder="Enter id of student" required>
+            <input type="text" id="studentBirth" placeholder="Enter date of birth (dd/mm/yyyy)" required>
+            <button type="submit">Add</button>
+        </form>
+
+        <div class="student-list" id="studentList">
+            <div class="student-item">
+                <span>XXXXXXXXXXXXXXX - Mã SV: 123456 - Ngày sinh: 01/01/2000</span>
+                <button class="delete-button">Xóa</button>
+            </div>
+            <div class="student-item">
+                <span>YYYYYYYYYYYYYY - Mã SV: 123457 - Ngày sinh: 02/02/2001</span>
+                <button class="delete-button">Xóa</button>
+            </div>
+            <div class="student-item">
+                <span>ZZZZZZZZZZZZZZ - Mã SV: 123458 - Ngày sinh: 03/03/2002</span>
+                <button class="delete-button">Xóa</button>
+            </div>
+        </div>
+        <button class="all-subjects-button"><a href="../list_subject/index.html">All Subjects</a></button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* Thêm phông chữ từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-image: url("/front_end_group/after/student_list/picture/one.jpg");
+    font-family: 'Roboto', sans-serif; /* Sử dụng phông chữ Roboto */
+}
+
+.list_main {
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng mờ */
+    border-radius: 10px; /* Bo tròn các góc */
+    padding: 20px; /* Thêm padding */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+}
+
+.right_hand_side {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.container_rhs {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.subject-time,
+.subject-title {
+    color: black;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subject-title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.table_list {
+    background-color: azure;
+    padding-top: 20px;
+    border-radius: 10px; /* Bo tròn các góc */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho bảng */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px; 
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+thead tr {
+    font-weight: bold; 
+    background-color: lightgray; 
+    text-align: center;
+}
+
+td:hover {
+    background-color: #f0f0f0; /* Màu nền khi di chuột qua */
+}
+
+.btn {
+    width: 60px;
+    height: fit-content;
+    border-radius: 10%;
+    font-size: 15px;
+}
+
+.state-1 {
+    background-color: lightblue;
+}
+
+.state-2 {
+    background-color: lightgoldenrodyellow;
+}
+
+.state-3 {
+    background-color: red;
+}
+
+/* Hiệu ứng cho ô chọn */
+select {
+    border: 1px solid #ccc; /* Đường viền cho ô chọn */
+    border-radius: 5px; /* Bo tròn các góc */
+    padding: 5px; /* Thêm padding */
+    transition: border-color 0.3s; /* Hiệu ứng chuyển đổi cho đường viền */
+}
+
+select:hover {
+    border-color: blue; /* Đổi màu đường viền khi di chuột qua */
+}

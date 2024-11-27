@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    background-image: url('/front_end_group/after/list_subject/picture/one.jpg');
+    background-size: cover; /* Đảm bảo hình nền phủ kín */
+    background-position: center; /* Căn giữa hình nền */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #FFFFFF; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Thêm độ mờ cho bóng chữ */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9); /* Độ trong suốt cho nền */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển động cho container */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Phóng to khi di chuột qua */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 2px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển động cho ô */
+}
+
+th {
+    background-color: #4CAF50; /* Màu nền cho tiêu đề bảng */
+    color: white; /* Màu chữ cho tiêu đề */
+    font-weight: bold;
+    text-transform: uppercase; /* Chữ hoa cho tiêu đề */
+}
+
+td {
+    background-color: #f9f9f9; /* Màu nền cho ô dữ liệu */
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f2f2; /* Màu nền cho hàng chẵn */
+}
+
+tr:hover {
+    background-color: #d1e7dd; /* Màu nền khi di chuột qua hàng */
+}
+
+tr:hover td {
+    color: #333; /* Đổi màu chữ khi di chuột qua hàng */
+    font-weight: bold; /* Làm đậm chữ khi hover */
+}
+
+a{
+    text-decoration: none;
+}
