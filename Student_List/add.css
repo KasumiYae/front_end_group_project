@@ -1,0 +1,115 @@
+/* Thêm phông chữ từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Sử dụng phông chữ Roboto */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    background-image: url("/front_end_group_project/front_end_group/after/add_del_student/picture/one.jpg");
+    background-size: cover; /* Đảm bảo hình nền phủ kín */
+    background-position: center; /* Căn giữa hình nền */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Thêm khoảng cách dưới tiêu đề */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Tăng khoảng cách giữa các phần tử */
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    transition: border-color 0.3s; /* Hiệu ứng chuyển đổi cho đường viền */
+}
+
+input[type="text"]:focus {
+    border-color: #28a745; /* Đổi màu đường viền khi ô input được chọn */
+    outline: none; /* Xóa viền mặc định */
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Thêm hiệu ứng chuyển đổi cho nút */
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Phóng to nút khi hover */
+}
+
+.student-list {
+    margin-top: 20px;
+}
+
+.student-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9; /* Màu nền cho từng mục sinh viên */
+    border-radius: 4px; /* Bo tròn các góc */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi cho nền */
+}
+
+.student-item:hover {
+    background-color: #e9ecef; /* Đổi màu nền khi hover */
+}
+
+.delete-button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Thêm hiệu ứng chuyển đổi cho nút xóa */
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+    transform: scale(1.1); /* Phóng to nút xóa khi hover */
+}
+
+
+.all-subjects-button {
+    margin-top: 20px; /* Khoảng cách trên nút */
+    padding: 10px;
+    background-color: #28a745; /* Màu xanh lá cây */
+    color: white; /* Màu chữ trắng */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển đổi */
+    width: 100%; /* Đặt chiều rộng đầy đủ */
+    max-width: 200px; /* Tối đa chiều rộng để nút không quá rộng */
+    text-align: center; /* Căn giữa văn bản trong nút */
+}
+
+.all-subjects-button:hover {
+    background-color: #218838; /* Đổi màu khi hover */
+    transform: scale(1.05); /* Phóng to khi hover */
+}
