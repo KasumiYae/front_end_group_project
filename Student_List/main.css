@@ -7,7 +7,7 @@
 
 /* Body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background: linear-gradient(120deg, #e7f3ff, #d9e8f5);
     color: #333;
     line-height: 1.6;
@@ -28,6 +28,11 @@ header {
 header h1 {
     font-size: 24px;
     font-weight: bold;
+    transition: transform 0.3s;
+}
+
+header h1:hover {
+    transform: scale(1.05);
 }
 
 nav ul {
@@ -45,6 +50,11 @@ nav ul li a {
     font-weight: bold;
     padding: 8px 12px;
     border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Toolbar Section */
@@ -60,27 +70,33 @@ nav ul li a {
 }
 
 .toolbar .add-btn {
-    padding: 8px 20px;
+    padding: 10px 20px;
     font-size: 14px;
-    background-color: lightgreen; /* Màu nền lightgreen */
-    color: #333; /* Màu chữ đen để dễ đọc */
+    background-color: #4caf50; /* Màu xanh lá cây */
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .toolbar .add-btn:hover {
-    background-color: #66bb6a; /* Màu nền khi di chuột qua */
+    background-color: #45a049; /* Màu nền khi di chuột qua */
+    transform: scale(1.05);
 }
 
 .toolbar .search-input {
-    padding: 8px;
+    padding: 10px;
     font-size: 14px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 5px;
     width: 300px;
+    transition: border-color 0.3s;
+}
+
+.toolbar .search-input:focus {
+    border-color: #004d99; /* Màu viền khi được chọn */
+    outline: none;
 }
 
 /* Table Section */
@@ -108,6 +124,7 @@ table th {
 
 table tr {
     border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
 }
 
 table tr:nth-of-type(even) {
@@ -115,7 +132,7 @@ table tr:nth-of-type(even) {
 }
 
 table tr:hover {
-    background-color: #f1f1f1;
+    background-color: #eaeaea; /* Màu nền khi di chuột vào hàng */
 }
 
 table td {
@@ -134,7 +151,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 button.edit-btn {
@@ -144,6 +161,7 @@ button.edit-btn {
 
 button.edit-btn:hover {
     background-color: #ff9800;
+    transform: scale(1.05);
 }
 
 button.delete-btn {
@@ -153,6 +171,7 @@ button.delete-btn {
 
 button.delete-btn:hover {
     background-color: #d32f2f;
+    transform: scale(1.05);
 }
 
 /* Media Queries */

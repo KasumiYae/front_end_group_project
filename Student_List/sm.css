@@ -8,8 +8,8 @@
 
 /* Body Styling */
 body {
-    background: linear-gradient(120deg, lightblue, #d2cece);
-    color: lightblue;
+    background: linear-gradient(120deg, #e0f7fa, #b2ebf2);
+    color: #333;
     line-height: 1.6;
     font-size: 16px;
 }
@@ -17,8 +17,8 @@ body {
 /* Header Section */
 .head1 {
     background-color: #004d99;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -30,9 +30,14 @@ header {
 }
 
 header .logo img {
-    width: 50px;
+    width: 60px;
     height: auto;
     border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
 }
 
 header .item1 ul {
@@ -41,7 +46,7 @@ header .item1 ul {
 }
 
 header .item1 ul li {
-    margin: 0 15px;
+    margin: 0 20px;
     cursor: pointer;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -49,26 +54,29 @@ header .item1 ul li {
 
 header .item1 ul li:hover {
     color: #e7dedc;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 /* Filter and Search Section */
 .item2 {
     background-color: #ffffff;
-    padding: 15px 20px;
+    padding: 20px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 3px solid #004d99;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .item2 .info a {
     color: #004d99;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .item2 .info a:hover {
     color: #00264d;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Table Section */
@@ -76,15 +84,16 @@ table {
     width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
 }
 
 table th, table td {
-    padding: 12px 15px;
+    padding: 15px;
     text-align: left;
+    transition: background-color 0.3s;
 }
 
 table th {
@@ -99,11 +108,11 @@ table tr {
 }
 
 table tr:nth-of-type(even) {
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
 }
 
 table tr:hover {
-    background-color: #f1f1f1;
+    background-color: #e0e0e0; /* Màu nền khi di chuột vào hàng */
 }
 
 table td {
@@ -128,6 +137,7 @@ table td:nth-child(2) {
 
     header .item1 ul {
         flex-direction: column;
+        margin-top: 10px;
     }
 
     table {
