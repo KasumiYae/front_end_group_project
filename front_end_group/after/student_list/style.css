@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    background-image: url("/front_end_group/after/student_list/picture/one.jpg");
+    background-image: url("/front_end_group_project/front_end_group/after/student_list/picture/one.jpg");
     font-family: 'Roboto', sans-serif; /* Sử dụng phông chữ Roboto */
 }
 
@@ -72,28 +72,4 @@ td:hover {
     height: fit-content;
     border-radius: 10%;
     font-size: 15px;
-}
-
-.state-1 {
-    background-color: lightblue;
-}
-
-.state-2 {
-    background-color: lightgoldenrodyellow;
-}
-
-.state-3 {
-    background-color: red;
-}
-
-/* Hiệu ứng cho ô chọn */
-select {
-    border: 1px solid #ccc; /* Đường viền cho ô chọn */
-    border-radius: 5px; /* Bo tròn các góc */
-    padding: 5px; /* Thêm padding */
-    transition: border-color 0.3s; /* Hiệu ứng chuyển đổi cho đường viền */
-}
-
-select:hover {
-    border-color: blue; /* Đổi màu đường viền khi di chuột qua */
 }

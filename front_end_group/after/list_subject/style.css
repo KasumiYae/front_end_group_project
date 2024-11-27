@@ -3,7 +3,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
-    background-image: url('/front_end_group/after/list_subject/picture/one.jpg');
+    background-image: url('/front_end_group_project/front_end_group/after/list_subject/picture/one.jpg');
     background-size: cover; /* Đảm bảo hình nền phủ kín */
     background-position: center; /* Căn giữa hình nền */
 }
