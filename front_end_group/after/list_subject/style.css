@@ -42,7 +42,7 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50; /* Màu nền cho tiêu đề bảng */
+    background-color: #2a3c95; /* Màu nền cho tiêu đề bảng */
     color: white; /* Màu chữ cho tiêu đề */
     font-weight: bold;
     text-transform: uppercase; /* Chữ hoa cho tiêu đề */
@@ -65,6 +65,26 @@ tr:hover td {
     font-weight: bold; /* Làm đậm chữ khi hover */
 }
 
-a{
+.all-subjects-button {
+    margin-top: 20px; /* Khoảng cách trên nút */
+    padding: 10px;
+    color: #0e0404; /* Màu chữ trắng */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển đổi */
+    width: 100%; /* Đặt chiều rộng đầy đủ */
+    max-width: 200px; /* Tối đa chiều rộng để nút không quá rộng */
+    text-align: center; /* Căn giữa văn bản trong nút */
+}
+
+.all-subjects-button:hover {
+    background-color: #218838; /* Đổi màu khi hover */
+    transform: scale(1.05); /* Phóng to khi hover */
+}
+
+.one{
     text-decoration: none;
+    color: #e9ecef;
 }

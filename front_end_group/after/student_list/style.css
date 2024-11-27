@@ -59,12 +59,13 @@ th, td {
 
 thead tr {
     font-weight: bold; 
-    background-color: lightgray; 
+    background-color: #2a3c95; 
     text-align: center;
+    color: aliceblue;
 }
 
 td:hover {
-    background-color: #f0f0f0; /* Màu nền khi di chuột qua */
+    background-color: lightseagreen; /* Màu nền khi di chuột qua */
 }
 
 .btn {
@@ -72,4 +73,18 @@ td:hover {
     height: fit-content;
     border-radius: 10%;
     font-size: 15px;
+}
+
+
+.add_student{
+    padding-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px auto;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add_student:hover{
+    transform: scale(1.05);
 }

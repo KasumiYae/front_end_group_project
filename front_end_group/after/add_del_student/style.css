@@ -41,13 +41,13 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-    border-color: #28a745; /* Đổi màu đường viền khi ô input được chọn */
+    border-color: lightgray; /* Đổi màu đường viền khi ô input được chọn */
     outline: none; /* Xóa viền mặc định */
 }
 
 button {
     padding: 10px;
-    background-color: #28a745;
+    background-color: #2a3c95;
     color: white;
     border: none;
     border-radius: 4px;
@@ -56,7 +56,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: lightskyblue;
     transform: scale(1.05); /* Phóng to nút khi hover */
 }
 
@@ -98,11 +98,11 @@ button:hover {
 .all-subjects-button {
     margin-top: 20px; /* Khoảng cách trên nút */
     padding: 10px;
-    background-color: #28a745; /* Màu xanh lá cây */
-    color: white; /* Màu chữ trắng */
+    color: #0e0404; /* Màu chữ trắng */
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    
     transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển đổi */
     width: 100%; /* Đặt chiều rộng đầy đủ */
     max-width: 200px; /* Tối đa chiều rộng để nút không quá rộng */
@@ -112,4 +112,9 @@ button:hover {
 .all-subjects-button:hover {
     background-color: #218838; /* Đổi màu khi hover */
     transform: scale(1.05); /* Phóng to khi hover */
+}
+
+.one{
+    text-decoration: none;
+    color: #e9ecef;
 }

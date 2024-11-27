@@ -47,7 +47,7 @@ input[type="text"]:focus {
 
 button {
     padding: 10px;
-    background-color: #28a745;
+    background-color: #2a3c95;
     color: white;
     border: none;
     border-radius: 4px;
@@ -98,7 +98,7 @@ button:hover {
 .all-subjects-button {
     margin-top: 20px; /* Khoảng cách trên nút */
     padding: 10px;
-    background-color: #28a745; /* Màu xanh lá cây */
+    background-color: #2a3c95; /* Màu xanh lá cây */
     color: white; /* Màu chữ trắng */
     border: none;
     border-radius: 4px;
@@ -112,4 +112,9 @@ button:hover {
 .all-subjects-button:hover {
     background-color: #218838; /* Đổi màu khi hover */
     transform: scale(1.05); /* Phóng to khi hover */
+}
+
+.one{
+    text-decoration: none;
+    color: #f9f9f9;
 }
